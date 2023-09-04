@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    padding-block: 6px;
+    box-shadow: 0 0 10px 1px #c9c9c9;
+    position: fixed;
+
+    background: white;
+    z-index: 1;
+}
+
+.container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-inline: 5px;
+}
+
+.container ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline: 10px;
+
+
+
+}
+
+.container div div p {
+    display: flex;
+    align-items: center;
+    font: normal 17px 'Poppins', sans-serif;
+
+}
+
+.container div div h2 {
+    font: 600 18px 'Poppins', sans-serif;
+ 
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 5px;
+    background: rgb(57, 241, 57);
+
+}
+
+@media(max-width: 800px) {
+
+    .hidden{
+        display: none;
+
+    }
+    .visibilit{
+        display: inline-block;
+    }
+}

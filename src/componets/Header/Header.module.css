@@ -1,0 +1,73 @@
+.container_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 1px 0px #c4c4c4;
+    padding-block: 10px;
+    position: relative;
+}
+.container_header div h1{
+    font: 800 27px 'Poppins', sans-serif;
+}
+.card_nav nav a{
+    text-decoration: none;
+    margin-left: 13px;
+    color: black;
+    font: 400 16px 'Poppins', sans-serif;
+}
+.container_header div button{
+    display: none;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+@media(max-width: 800px){
+
+    .container_header div button{
+        display: inline-block;
+        background: none;
+        transform: rotate(90deg);
+        border: none;
+        font: 600 20px 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        border-radius: 10px;
+    }
+    .container_header div button:active{
+        box-shadow: 0 0 5px 1px #a09c9c;
+    }
+    .card_nav{
+
+        position: absolute;
+        top: 60px;
+        width: 80%;
+    }
+
+    .card_nav nav {
+        /*efeito do card em estetica*/
+        width: 100%;
+        background-color: rgb(14, 17, 53);
+        border-radius: 10px;
+        padding-block: 10px;
+        
+    }
+    .card_nav nav a{
+        color: white;
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding-block: 10px;
+
+    }
+    .card_nav nav a:hover{
+        background: #c9c9c9;
+    }
+
+    .hidden{
+        display: none;
+
+    }
+    .visibilit{
+        display: block;
+    }
+}

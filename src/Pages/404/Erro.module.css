@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    width: 100%;
+}
+.container h1, .container p{
+    padding-block: 20px;
+    font: 400 16px "Poppins", serif;
+}
+.container h1{
+    font: 600 26px "Poppins", serif;
+}
+.container button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px 1px #747272;
+    font: 400 16px "Poppins", serif;
+}
+.container button:active{
+    box-shadow: 0 0;
+}

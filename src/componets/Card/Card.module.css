@@ -1,0 +1,68 @@
+.container{
+    box-shadow: 0 0 10px 2px #c2c2c2;
+    width: 60%;
+    border-radius: 10px;
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.card_btn button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.card_btn button:nth-child(1){
+    font: 700 20px "Arial";
+    transform: rotate(90deg);
+
+}
+.card_btn button:nth-child(2){
+    box-shadow: 0 0 4px 2px #c3c3c3;
+    padding: 3px 10px;
+}
+.card_user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.card_user div{
+    display: flex;
+    align-items: center;
+    
+}
+.card_user div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.card_user h3{
+    font: 600 14px 'Poppins', sans-serif;
+    margin-right: 10px;
+}
+.card_user h3::first-letter{
+    font-size: 14px;
+}
+.card_user h3:hover{
+    color: rgb(20, 20, 161);
+}
+.card_mensage{
+    padding-top: 10px;
+    font: 400 15px 'Poppins', sans-serif;
+}
+/*essas duas classes fica com a function de deixar o bottao delete visivel ou não*/
+.a{
+    display: none;
+}
+.on{
+    display: inline-block;
+}
+
+@media(max-width: 800px){
+
+    .container{
+        width: 95%;
+    }
+}

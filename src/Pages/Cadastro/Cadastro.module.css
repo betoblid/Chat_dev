@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rebeccapurple;
+    
+}
+.card_cadastro{
+    width: 500px;
+    min-height: 380px;
+    border-radius: 15px;
+    background: white;
+    padding-inline: 20px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+.card_cadastro h1{
+    font: 600 24px 'Poppins', sans-serif;
+    padding-block: 20px;
+    text-align: center;
+
+}
+.card_cadastro input{
+    width: 100%;
+    font: normal 18px 'Poppins', sans-serif;
+    padding: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.card_cadastro label{
+    font: 400 18px 'Poppins', sans-serif;
+}
+.card_cadastro button{
+    font: 400 18px 'Poppins', sans-serif;
+    padding-block: 5px;
+    background: white;
+    border: 1px solid rgb(61, 60, 60);
+    cursor: pointer;
+}
+.card_cadastro button:hover{
+    background: rebeccapurple;
+    color: white;
+}
+.card_cadastro button:active{
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+@media(max-width: 505px){
+    .card_cadastro{
+        width: 96%;
+    }
+    .card_cadastro label{
+        font-size: 14;
+    }
+    .card_cadastro input{
+        font-size: 14px
+    }
+    .card_cadastro button{
+        font-size: 14px;
+    }
+}
