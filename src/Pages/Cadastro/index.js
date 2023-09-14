@@ -21,13 +21,15 @@ const Form = () => {
 
             alert("ja existe um login")
         } else {
-            axios.post("https://api-chat-o8tn.onrender.com/users", {
+            axios.post("https://api-chat-six.vercel.app/users", {
                 nome: nome,
                 avatar: Avata
             }).catch((error) => console.error(error))
 
             //salvoando no localstorang para usar no futuro
             localStorage.setItem("cadastro", JSON.stringify(db))
+            
+            alert("Login feito com Sucesso")
         }
     }
 

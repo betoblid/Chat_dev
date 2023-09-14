@@ -3,14 +3,16 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rebeccapurple;
+    background: #0d0f36;
+    color: white;
     
 }
 .card_cadastro{
     width: 500px;
     min-height: 380px;
-    border-radius: 15px;
-    background: white;
+    border-radius: 20px;
+    background: #294380;
+    box-shadow: 0 0 20px 1px #1f3261;
     padding-inline: 20px;
     display: flex;
     
@@ -25,30 +27,32 @@
 }
 .card_cadastro input{
     width: 100%;
-    font: normal 18px 'Poppins', sans-serif;
+    font: 600 18px 'Poppins', sans-serif;
     padding: 5px;
+    color: #f1f6ce;
     margin-bottom: 20px;
+    background: none;
     outline: none;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #f1f6ce;
 }
 .card_cadastro label{
     font: 400 18px 'Poppins', sans-serif;
 }
 .card_cadastro button{
-    font: 400 18px 'Poppins', sans-serif;
+    font: 600 18px 'Poppins', sans-serif;
     padding-block: 5px;
-    background: white;
-    border: 1px solid rgb(61, 60, 60);
+    background: #69d2cd;
+    border: none;
+    border-radius: 20px;
+
     cursor: pointer;
 }
 .card_cadastro button:hover{
-    background: rebeccapurple;
-    color: white;
+    background: #b9f1d6;
 }
 .card_cadastro button:active{
-    background: white;
-    color: rgb(0, 0, 0);
+    background: #f1f6ce;
 }
 
 @media(max-width: 505px){
@@ -56,12 +60,26 @@
         width: 96%;
     }
     .card_cadastro label{
-        font-size: 14;
+        font-size: 14px;
     }
     .card_cadastro input{
         font-size: 14px
     }
     .card_cadastro button{
         font-size: 14px;
+    }
+}
+@media(min-width: 1400px){
+    .card_cadastro{
+        width: 700px;
+    }
+    .card_cadastro label{
+        font-size: 20px;
+    }
+    .card_cadastro input{
+        font-size: 22px
+    }
+    .card_cadastro button{
+        font-size: 22px;
     }
 }

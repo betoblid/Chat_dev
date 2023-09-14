@@ -7,3 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar{
+  background-color: black;
+  width: 7px;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb{
+  background-color: blue;
+}

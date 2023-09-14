@@ -1,17 +1,21 @@
 .container_post{
     position: fixed;
-    bottom: 10px;
+    bottom: 2%;
     z-index: 9999;
-
     display: flex;
     align-items: center;
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
 }
+.container{
+    background-image: linear-gradient(to left bottom, #200e29, #28163b, #2f204f, #312a64, #2f367b, #2c4a94, #225fad, #0075c5, #0097de, #00b8ea, #00d8ec, #00f6e6);
+    min-height: calc(100vh - 61px);
+    padding-block: 10px;
+}
 .container_post div input{
     width: 46vw;
-    padding: 6px 4px;
+    padding: 6px 5px;
     font-size: 18px;
     outline: none;
     border: none;

@@ -3,15 +3,21 @@
     width: 60%;
     border-radius: 10px;
     margin: 20px auto;
-
+    background-image: linear-gradient(to right top, #5563f2, #5e57f3, #6948f2, #7635ef, #8312eb);
+    color: white;
     display: flex;
     flex-direction: column;
     padding: 20px;
+}
+.container p{
+    font-weight: 600;
 }
 .card_btn button{
     background: none;
     border: none;
     cursor: pointer;
+    color: white;
+    font-weight: 600;
 }
 .card_btn button:nth-child(1){
     font: 700 20px "Arial";
@@ -20,7 +26,10 @@
 }
 .card_btn button:nth-child(2){
     box-shadow: 0 0 4px 2px #c3c3c3;
+    font-family: "Poppins" sans-serif;
+    font-weight: 600;
     padding: 3px 10px;
+    background: rgb(49, 49, 49);
 }
 .card_user{
     display: flex;
@@ -46,7 +55,7 @@
     font-size: 14px;
 }
 .card_user h3:hover{
-    color: rgb(20, 20, 161);
+    color: rgb(164, 164, 240);
 }
 .card_mensage{
     padding-top: 10px;
@@ -58,6 +67,7 @@
 }
 .on{
     display: inline-block;
+
 }
 
 @media(max-width: 800px){

@@ -5,22 +5,33 @@
     box-shadow: 0 1px 0px #c4c4c4;
     padding-block: 10px;
     position: relative;
+    background-image: linear-gradient(to right top, #3a32f9, #502be2, #5b24cc, #611fb7, #621ca3);
+
 }
 .container_header div h1{
-    font: 800 27px 'Poppins', sans-serif;
+    font: 800 30px 'Poppins', sans-serif;
+    transform: rotate(-10deg);
 }
-.card_nav nav a{
+.card_nav nav ul li a{
     text-decoration: none;
-    margin-left: 13px;
-    color: black;
-    font: 400 16px 'Poppins', sans-serif;
+
+    color: white;
+    font: 600 16px 'Poppins', sans-serif;
 }
+.card_nav nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
 .container_header div button{
     display: none;
 }
 .logo a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 @media(max-width: 800px){
 
@@ -37,32 +48,27 @@
         box-shadow: 0 0 5px 1px #a09c9c;
     }
     .card_nav{
-
+        background-color: rgb(14, 17, 53);
         position: absolute;
         top: 60px;
         width: 80%;
     }
 
-    .card_nav nav {
-        /*efeito do card em estetica*/
-        width: 100%;
-        background-color: rgb(14, 17, 53);
-        border-radius: 10px;
-        padding-block: 10px;
+    .card_nav nav ul{
+        display: block;
+        gap: 0;
         
     }
-    .card_nav nav a{
-        color: white;
+    .card_nav nav ul li a{
         display: block;
         text-align: center;
+        padding-block: 12px;
         margin: 0;
-        padding-block: 10px;
 
     }
-    .card_nav nav a:hover{
-        background: #c9c9c9;
+    .card_nav nav ul li a:hover{
+        background-color: #c9c9c9;
     }
-
     .hidden{
         display: none;
 
@@ -70,4 +76,29 @@
     .visibilit{
         display: block;
     }
+}
+
+@media(min-width: 801px){
+    /*efeito do hover ao passar o mause por sima dos links*/
+    .items {
+        position: relative;
+      }
+      
+      .items::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        scale: 0;
+        transform-origin: left;
+        transition: scale 0.5s;
+      }
+      
+      .items:hover::before {
+        scale: 1;
+      }
+      
 }

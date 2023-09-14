@@ -8,7 +8,7 @@ export default function Card({ nome, avatar, coment, date, value }) {
 
     function btn(valor) {
 
-        axios.delete(`https://api-chat-o8tn.onrender.com/${valor}`)
+        axios.delete(`https://api-chat-six.vercel.app/${valor}`)
 
         window.location.reload()
 
@@ -26,7 +26,7 @@ export default function Card({ nome, avatar, coment, date, value }) {
                 <button 
                     className={btn_delet  ? style.on : style.a}
                     onClick={() => btn(value)}
-                >delete</button>
+                >Deleta</button>
             </div>
             <div className={style.card_user}>
                 <div>

@@ -8,14 +8,21 @@ import List from "../List"
 
 export default function Input() {
 
+    function key(e){
+        var key = e.which || e.keyCode;
+        if(key == 13){
+            comentar()
+        }
+    }
 
     const [mensage, setMensage] = useState("")
     const [user, setUser] = useState([])
     const [controll, setControll] = useState(false)
 
-    const api = "https://api-chat-o8tn.onrender.com/"
+    const api = "https://api-chat-six.vercel.app/"
     //a cada envio de mensagem a api recebe um post e depois a mensagem e limpada e
     function comentar() {
+
 
         if (controll) {
 
@@ -55,7 +62,7 @@ export default function Input() {
 
     return (
 
-        <>
+        <div className={style.container}>
             {
                 controll ? <List user={user} c={false} /> : <List user={user} />
             }
@@ -68,6 +75,7 @@ export default function Input() {
                         placeholder="digite um valor"
                         value={mensage}
                         onChange={(e) => setMensage(e.target.value)}
+                        onKeyDown={(e) => key(e)}
 
                     />
                 </div>
@@ -76,6 +84,6 @@ export default function Input() {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }

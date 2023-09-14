@@ -17,8 +17,16 @@ const [menu, setMenu ] = useState(false)
             </div>
             <div className={style.card_nav}>
                 <nav className={menu ? style.visibilit : style.hidden}>
-                    <Link to="/cadastro">Cadastro</Link>
-                    <Link to="/users">Usuarios</Link>
+                        
+                        <ul>
+                            <li className={style.items}>
+                                <Link to="/cadastro">Cadastro</Link>
+                            </li>
+                            <li className={style.items}>
+                                <Link to="/users">Usuarios</Link>
+                            </li>
+                        </ul>
+
                 </nav>
             </div>
         </header>

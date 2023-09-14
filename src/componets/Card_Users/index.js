@@ -11,7 +11,7 @@ export default function Card_Users({nome, avatar, data}){
                     <h3>{nome}</h3>
                 </div>
                 <div>
-                    <p>Data de Registro: {data}</p>
+                    <p>Registro sé: {data}</p>
                 </div>
             </div>
         </div>

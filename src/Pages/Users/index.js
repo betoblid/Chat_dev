@@ -9,9 +9,9 @@ function Users() {
     const [dados, setDados] = useState([])
 
     useEffect(() => {
-        function dados() {
+        async function dados() {
 
-            axios.get("https://api-chat-o8tn.onrender.com/users")
+            const dadosapi = await axios.get("https://api-chat-six.vercel.app/users")
                 .then(res => setDados(res.data))
         }
         dados()

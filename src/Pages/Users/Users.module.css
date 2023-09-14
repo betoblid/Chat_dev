@@ -1,7 +1,8 @@
 .container{
-    margin-top: 15px;
     display: flex;
     align-items: center;
     flex-flow: column wrap;
     gap: 5px;
+    background-image: linear-gradient(to left bottom, #200e29, #28163b, #2f204f, #312a64, #2f367b, #2c4a94, #225fad, #0075c5, #0097de, #00b8ea, #00d8ec, #00f6e6);
+    height: calc(100vh - 61px);
 }
